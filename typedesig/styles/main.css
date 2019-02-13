@@ -1,0 +1,143 @@
+body {
+  background: #cccccc;
+}
+
+#letter{
+  width: 200px;
+  height: 250px;
+  margin-left: 25px;
+  margin-top: 50px;
+  background: white;
+  position: relative;
+  float: left;
+}
+
+
+#hz {
+  width: 100px;
+  height: 3px;
+  background: grey;
+  top: -110px;
+  left: 60px;
+  margin-top: 10px;
+  position: relative;
+
+}
+
+#lt1 {
+  width: 3px;
+  height: 150px;
+  background: grey;
+  top: 50px;
+  left: 40px;
+  margin-top: 10px;
+  position: relative;
+}
+
+#lt2 {
+  width: 3px;
+  height: 150px;
+  background: grey;
+  top: -214px;
+  left: 160px;
+  margin-top: 10px;
+  position: relative;
+}
+
+#hz1 {
+  width: 100px;
+  height: 3px;
+  background: grey;
+  top: -19px;
+  left: 60px;
+  margin-top: 10px;
+  position: relative;
+
+}
+#lt3 {
+  width: 3px;
+  height: 79px;
+  background: grey;
+  top: -113px;
+  left: 50px;
+  margin-left: 10px;
+  position: relative;
+  float: left;
+}
+
+#lt4 {
+  width: 3px;
+  height: 39px;
+  background: grey;
+  top: -3px;
+  left: -53px;
+  margin-left: 10px;
+  position: relative;
+  float: left;
+}
+
+#lt5 {
+  width: 3px;
+  height: 139px;
+  background: grey;
+  top: 55px;
+  left: 30px;
+  margin-left: 10px;
+  position: relative;
+  float: left;
+}
+
+#hz2 {
+  width: 100px;
+  height: 3px;
+  background: grey;
+  top: 35px;
+  left: 60px;
+  margin-top: 10px;
+  position: relative;
+
+}
+
+#hz3 {
+  width: 100px;
+  height: 3px;
+  background: grey;
+  top: 35px;
+  left: 40px;
+  margin-top: 10px;
+  position: relative;
+
+}
+
+#lt6 {
+  width: 3px;
+  height: 39px;
+  background: grey;
+  top: -3px;
+  left: -53px;
+  margin-left: 10px;
+  position: relative;
+  float: left;
+}
+
+#hz4 {
+  width: 100px;
+  height: 3px;
+  background: grey;
+  top: -115px;
+  left: 60px;
+  margin-top: 10px;
+  position: relative;
+
+}
+
+#hz5 {
+  width: 100px;
+  height: 3px;
+  background: grey;
+  top: -115px;
+  left: 40px;
+  margin-top: 10px;
+  position: relative;
+
+}

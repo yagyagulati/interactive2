@@ -1,0 +1,168 @@
+:root {
+  --fontHeight: 100px;
+  --color: white;
+  --negativeColor: black;
+  --baseKern: 20px;
+  --thinStemWidth: 10px;
+  --thickStemWidth: 30px;
+}
+
+.fontBox {
+  background: var(--negativeColor);
+  height:var(--fontHeight);
+  padding:50px;
+  overflow:hidden;
+}
+
+a {
+ color:red; 
+}
+
+
+
+
+
+/* define some letter parts */
+
+.thinStem {
+  background: var(--color);
+  width:var(--thinStemWidth); 
+  height: var(--fontHeight);
+}
+
+.thickStem {
+  background: var(--color);
+  width:var(--thickStemWidth); 
+  height: var(--fontHeight);
+}
+
+.leftLeaning {
+  transform:rotate(-10deg) 
+}
+
+.rightLeaning {
+  transform:rotate(10deg) 
+}
+
+.vTerminal {
+  /*  defines a triangular shape  */
+  width: 0; 
+  height: 0; 
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent; 
+  border-bottom:30px solid var(--color); 
+  
+  transform: rotate(-5deg)
+}
+
+.thickStemTerminal {
+  width: 0; 
+  height: 0; 
+  border-right: 20px solid transparent;
+  border-left: 20px solid transparent; 
+  border-top:15px solid var(--color); 
+}
+.thinStemTerminal {
+  width: 0; 
+  height: 0; 
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent; 
+  border-top:7px solid var(--color); 
+}
+.crossBar {
+  width:50px; 
+  height:var(--thinStemWidth);
+  background: var(--color);
+  transform:rotate(5deg);
+}
+.counterDot {
+  height:calc(var(--thickStemWidth) * 2);
+  width:calc(var(--thickStemWidth) * 2);
+  background:var(--negativeColor);
+  border-radius:var(--thickStemWidth);
+}
+
+
+/* setup so our letters sit nice */
+.rootLetter {
+  float:left;
+  position:relative; 
+  padding-right:var(--baseKern); 
+}
+
+.letter {
+  height:calc(var(--fontHeight) + 20px);
+}
+.letter * {
+  position:absolute;
+}
+
+
+/* change our stroke width when a letter is hovered */
+.letter:hover {
+  --thinStemWidth:3px; 
+}
+.letter:hover .thinStem.rightLeaning {
+  transform:translateX(4px) rotate(10deg); 
+}
+
+/* positioning parts of letters */
+/* VVVVV */
+.v {
+  width:80px;
+}
+.v>.one {
+  left:60px;  
+}
+.v>.two {
+  left:20px;  
+}
+.v>.three {
+  left:20px;
+  top: calc(var(--fontHeight) - 28px);  
+}
+.v>.four {
+  top:-2px; 
+  left:64px;
+}
+.v>.five {
+  top:-2px; 
+}
+
+/* WWWWW */
+.w {
+  width:140px;
+}
+.w>.two {
+  left:60px
+}
+.w>.three {
+  top:calc(var(--fontHeight) - 10px);
+  left:18px;
+}
+
+/* MMMMM */
+.m {
+  width:140px;
+  transform:rotate(180deg) translateY(21px);
+}
+.m>.two {
+  left:60px
+}
+.m .thickStemTerminal {
+  transform:translate(5px); 
+}
+.m .vTerminal {
+  transform:rotate(8deg) translateX(11px) translateY(2px); 
+}
+
+/* AAAAA */
+.a {
+  width:80px;
+}
+.a>.one {
+  transform:rotate(180deg) translateY(21px)
+}
+.a>.two {
+  top:calc(calc(var(--fontHeight) / 2) + 20px);
+}
