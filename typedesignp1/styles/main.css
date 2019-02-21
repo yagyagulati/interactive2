@@ -1214,3 +1214,13 @@ body {
         position: absolute;
     }
 
+button{
+  color: rgb(255,215,0);
+    height: 40px;
+  width: 40px;
+  opacity: .5;
+  margin-left: 10px;
+  background-color: rgb(255,215,0);
+  border-radius: 50%;
+  display: inline-block;
+}
