@@ -1,3 +1,9 @@
+body {
+   transform: scale(1.5);
+   transform-origin: 0 0;
+   // add prefixed versions too.
+}
+
 .a{
   position: relative;
   float: left;
@@ -1210,7 +1216,7 @@
 
 .dottt{
   float: left;
-  margin-left: 515px;
+  margin-left: 450px;
   margin-top: -400px;
 }
 
@@ -1221,4 +1227,13 @@
   background-color: rgb(255,215,0);
   border-radius: 50%;
   display: inline-block;
+}
+
+
+#hz26{
+  width: 78px;
+    height: 50px;
+    border-bottom: 1px solid white;
+    -webkit-transform: translateY(24px) translateX(12px) rotate(104deg);
+    position: absolute;
 }
