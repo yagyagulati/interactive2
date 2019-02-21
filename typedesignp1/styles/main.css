@@ -1,3 +1,9 @@
+body {
+   transform: scale(2.2);
+   transform-origin: 0 0;
+   // add prefixed versions too.
+}
+
 .a{
   position: relative;
   float: left;
@@ -1207,18 +1213,3 @@
             rotate(64deg); 
         position: absolute;
     }
-
-.dottt{
-  float: left;
-  margin-left: 515px;
-  margin-top: -400px;
-}
-
-.dott {
-  height: 20px;
-  width: 20px;
-  margin-left: 10px;
-  background-color: rgb(255,215,0);
-  border-radius: 50%;
-  display: inline-block;
-}
