@@ -396,14 +396,6 @@ body {
 
 .line {
   background:rgb(255,215,0);
-  opacity:1;  
-    animation: flickerAnimation 3s infinite;
-}
-
-@keyframes flickerAnimation { /* flame pulses */
-  0%   { opacity:1; }
-  50%  { opacity:0; }
-  100% { opacity:1; }
 }
 
 #hz{
