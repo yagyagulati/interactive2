@@ -91,24 +91,24 @@ body {
 .dot{
   position: relative;
   float: left;
-  width: 30px;
-  height: 30px;
+ width: 70px;
+  height: 100px;
   margin-left: 10px;
 }
 
 .ex{
   position: relative;
   float: left;
-  width: 30px;
-  height: 30px;
+ width: 70px;
+  height: 100px;
   margin-left: 10px;
 }
 
 .comma{
   position: relative;
   float: left;
-  width: 30px;
-  height: 30px;
+ width: 70px;
+  height: 100px;
   margin-left: 10px;
 }
 
@@ -1211,7 +1211,6 @@ body {
 .k.bottom {
   height:50px;
   width:20px;
-  margin-top: 44px;
   margin-left: -25px;
   display:grid;
   grid-auto-rows: 1px;
@@ -1253,4 +1252,53 @@ button{
     border-bottom: 1px solid white;
     -webkit-transform: translateY(24px) translateX(12px) rotate(104deg);
     position: absolute;
+}
+
+.com.bottom {
+  height:50px;
+  width:60px;
+  display:grid;
+  grid-auto-rows: 1px;
+  grid-gap:5px;
+  margin-left: 10px;
+}
+
+.do.bottom {
+  height:50px;
+  width:60px;
+  display:grid;
+  grid-auto-rows: 1px;
+  grid-gap:5px;
+  margin-left: 10px;
+}
+
+.numbers{
+  margin-top: 100px;
+}
+
+.que.top {
+  height:50px;
+  width:50px;
+  display:grid;
+  grid-auto-rows: 1px;
+  grid-gap:5px;
+  margin-left: -10px;
+}
+
+.que.botto {
+  height:50px;
+  width:50px;
+  display:grid;
+  grid-auto-rows: 1px;
+  grid-gap:5px;
+  margin-left: 10px;
+}
+
+.que.bottom {
+  height:50px;
+  width:60px;
+  display:grid;
+  grid-auto-rows: 1px;
+  grid-gap:5px;
+  margin-left: 10px;
 }
