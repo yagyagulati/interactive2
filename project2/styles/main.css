@@ -1,0 +1,283 @@
+.square{
+  margin-left: 35px;
+}
+.box{
+  width:250px;
+  height:250px;
+  float: left;
+  margin-left: 50px;
+  margin-top:50px;
+}
+
+.one{
+background: black;
+opacity: 1;
+  transition: 0.3s;
+}
+.one:hover{
+  opacity: .6;
+  background: yellow;
+}
+
+.two{
+  background: black;
+}
+
+.two:hover{
+  background: red;
+  transform: scaleX(2);
+  transition-duration: 2s;
+}
+
+.three{
+  background: black;
+  opacity:1;  
+  animation: flickerAnimation 5s infinite;
+}
+
+@keyframes flickerAnimation { /* flame pulses */
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+
+.four{
+  background: black;
+}
+
+.four:hover{
+  position: relative;
+  animation: four 2s infinite;
+  animation-iteration-count: infinite;
+}
+
+@keyframes four {
+  0% {
+    top: 0px;
+  }
+  25% {
+    top: 10px;
+  }
+  50% {
+    top: 15px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+.five{
+  background: black;
+}
+
+.five:hover{
+  position: relative;
+  animation: five 1s infinite;
+  animation-iteration-count: infinite;
+}
+
+@keyframes five {
+  0% {
+    right: 10px;
+  }
+  25% {
+    top: 20px;
+  }
+  50% {
+    left: 20px;
+  }
+  100% {
+    bottom: 10px;
+  }
+}
+
+.six{
+  background: black;
+}
+
+.six:hover{
+  transform: scale(2);
+  transition-duration: 3s;
+}
+
+.seven{
+  background: black;
+}
+
+.seven:hover{
+  transform: rotate(45deg);
+  transition-duration: 2s;
+  background: green;
+}
+
+.eight{
+  background: black;
+}
+
+.nine{
+  background: black;
+}
+
+.ten{
+  background: black;
+}
+
+.eleven{
+  background: black;
+}
+
+.twelve{
+  background: black;
+}
+
+.thirteen{
+  background: black;
+}
+
+.fourteen{
+  background: black;
+}
+
+.fifteen{
+  background: black;
+}
+
+.sixteen{
+  background: black;
+}
+
+.seventeen{
+  background: black;
+}
+
+.eighteen{
+  background: black;
+}
+
+.ninteen{
+  background: black;
+}
+
+.twenty{
+  background: black;
+}
+
+.twenty1{
+  background: black;
+}
+
+.twenty2{
+  background: black;
+}
+
+.twenty3{
+  background: black;
+}
+
+.twenty4{
+  background: black;
+}
+
+.twenty5{
+  background: black;
+}
+
+.twenty6{
+  background: black;
+}
+
+.twenty7{
+  background: black;
+}
+
+.twenty8{
+  background: black;
+}
+
+.twenty9{
+  background: black;
+}
+
+.thirty{
+  background: black;
+}
+
+.thirty1{
+  background: black;
+}
+
+.thirty2{
+  background: black;
+}
+
+.thirty3{
+  background: black;
+}
+
+.thirty4{
+  background: black;
+}
+
+.thirty5{
+  background: black;
+}
+
+.thirty6{
+  background: black;
+}
+
+.thirty7{
+  background: black;
+}
+
+.thirty8{
+  background: black;
+}
+
+.thirty9{
+  background: black;
+}
+
+.fourty{
+  background: black;
+}
+
+.fourty1{
+  background: black;
+}
+
+.fourty2{
+  background: black;
+}
+
+.fourty3{
+  background: black;
+}
+
+.fourty4{
+  background: black;
+}
+
+.fourty5{
+  background: black;
+}
+
+.fourty6{
+  background: black;
+}
+
+.fourty7{
+  background: black;
+}
+
+.fourty8{
+  background: black;
+}
+
+.fourty9{
+  background: black;
+}
+
+.fifty{
+  background: black;
+}
