@@ -10,17 +10,17 @@
 }
 
 .one{
-background: black;
-opacity: 1;
+  background: rgb(255,99,71); 
+  opacity: 1;
   transition: 0.3s;
 }
 .one:hover{
   opacity: .6;
-  background: yellow;
+  background: red;
 }
 
 .two{
-  background: black;
+background: rgb(255,99,71)
 }
 
 .two:hover{
@@ -30,7 +30,7 @@ opacity: 1;
 }
 
 .three{
-  background: black;
+background: rgb(255,99,71);
   opacity:1;  
   animation: flickerAnimation 5s infinite;
 }
@@ -42,7 +42,7 @@ opacity: 1;
 }
 
 .four{
-  background: black;
+background: rgb(255,99,71);
 }
 
 .four:hover{
@@ -67,7 +67,7 @@ opacity: 1;
 }
 
 .five{
-  background: black;
+background: rgb(255,99,71);
 }
 
 .five:hover{
@@ -92,7 +92,7 @@ opacity: 1;
 }
 
 .six{
-  background: black;
+background: rgb(255,99,71);
 }
 
 .six:hover{
@@ -101,7 +101,7 @@ opacity: 1;
 }
 
 .seven{
-  background: black;
+background: rgb(255,99,71);
 }
 
 .seven:hover{
@@ -111,173 +111,443 @@ opacity: 1;
 }
 
 .eight{
-  background: black;
+background: rgb(255,99,71);
+}
+
+.eight:hover{
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  transform: scale(0.8);
+    transition: transform 1.5s;
 }
 
 .nine{
-  background: black;
+background: rgb(255,99,71);
+transition-duration: 1.5s
+}
+
+.nine:hover{
+  border-radius: 50%;
 }
 
 .ten{
-  background: black;
+background: rgb(255,99,71);
+}
+
+.ten:hover{
+    box-shadow:
+    1px 1px #53a7ea,
+    2px 2px #53a7ea,
+    3px 3px #53a7ea;
+    -webkit-transform: translateX(-6px);
+    transform: translateX(-6px);
 }
 
 .eleven{
-  background: black;
+background: rgb(255,99,71);
+  transform: skewY(1);
+  transition: transform 0.5s ease;  
+}
+
+.eleven:hover{
+  transform: skew(30deg, 20deg);
 }
 
 .twelve{
-  background: black;
+background: rgb(255,99,71);
+ transform: rotate(0);
+  transition: transform 0.5s ease;  
+}
+
+.twelve:hover{
+ transform: perspective(500px) scaleZ(2) rotateX(45deg);
 }
 
 .thirteen{
-  background: black;
+background: rgb(255,99,71);
+    transition: transform 3s;
+}
+
+.thirteen:hover{
+ transform: rotate3d(3, 2, 2, 90deg) translateZ(50px);
 }
 
 .fourteen{
-  background: black;
+background: rgb(255,99,71);
+   transform: matrix3d(1);
+  transition: transform 0.5s ease;
+}
+.fourteen:hover{
+transform: matrix3d(0.8535533905932737, 0.4999999999999999, 0.14644660940672619, 0, -0.4999999999999999, 0.7071067811865476, 0.4999999999999999, 0, 0.14644660940672619, -0.4999999999999999, 0.8535533905932737, 0, 22.62994231491119, -20.3223304703363, 101.3700576850888, 1)
 }
 
 .fifteen{
-  background: black;
+background: rgb(255,99,71);
+    transform: matrix(1, 1, 1, 1);
+  transition: transform 0.5s ease;
+}
+
+.fifteen:hover{
+  transform: matrix(1, -1, 0, 1, 0, 0);
 }
 
 .sixteen{
-  background: black;
+background: rgb(255,99,71);
+  transform-origin: left top;
+  transition: transform 3s;
+}
+
+.sixteen:hover{
+ transform: rotate(-500deg);
 }
 
 .seventeen{
-  background: black;
+background: rgb(255,99,71);
+  transform-origin: left top;
+  transition: transform 3s;
+}
+
+.seventeen:hover{
+ transform: rotate(500deg);
 }
 
 .eighteen{
-  background: black;
+background: rgb(255,99,71);
+  transition-duration: 2s;
 }
 
-.ninteen{
-  background: black;
-}
-
-.twenty{
-  background: black;
+.eighteen:hover{
+  box-shadow: 0 0 20px 10px red;
+  transform:scale(.75);
 }
 
 .twenty1{
-  background: black;
+background: rgb(255,99,71);
+  border-radius: 6px;
+  height: 250px;
+  position: relative;
+  min-width: 250px;
 }
 
+.twenty1:hover{
+    animation: slide 2s linear;
+}
+
+@keyframes slide {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  50% {
+    left: 244px;
+    top: 100px;
+  }
+  100% {
+    left: 488px;
+    top: 0;
+  }
+}
+
+.ball {
+  background: #2db34a;
+  border-radius: 50%;
+  height: 50px;
+  position: absolute;
+  width: 50px;
+}
+
+.ninteen{
+background: rgb(255,99,71);
+}
+
+@-webkit-keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+@keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+.ninteen:hover{
+ -webkit-animation-name: hvr-pop;
+  animation-name: hvr-pop;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+.twenty{
+background: rgb(255,99,71);
+  border-radius: 6px;
+  height: 250px;
+  position: relative;
+  min-width: 250px;
+}
+
+.twenty:hover{
+  animation-name: slide2;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: .5s;
+}
+
+@keyframes slide2 {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  50% {
+    left: 244px;
+    top: 100px;
+  }
+  100% {
+    left: 488px;
+    top: 0;
+  }
+}
+
+.ball {
+  background: #2db34a;
+  border-radius: 50%;
+  height: 50px;
+  position: absolute;
+  width: 50px;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(.3);
+    background-color: blue;
+    border-radius: 100%;
+  }
+  50% {
+    background-color: purple;
+  }
+  100% {
+    transform: scale(1.5);
+    background-color: pink;
+  }
+}
 .twenty2{
-  background: black;
+background: rgb(255,99,71);
+   animation-name: stretch;
+  animation-duration: 1.5s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running; 
 }
 
-.twenty3{
-  background: black;
-}
-
-.twenty4{
-  background: black;
-}
-
-.twenty5{
-  background: black;
-}
-
-.twenty6{
-  background: black;
-}
-
-.twenty7{
-  background: black;
-}
-
-.twenty8{
-  background: black;
-}
-
-.twenty9{
-  background: black;
-}
-
-.thirty{
-  background: black;
-}
-
-.thirty1{
-  background: black;
-}
-
-.thirty2{
-  background: black;
-}
-
-.thirty3{
-  background: black;
+.twenty2 {
+  animation: 
+    stretch
+    1.5s
+    ease-out
+    0s
+    alternate
+    infinite
+    none
+    running;
 }
 
 .thirty4{
-  background: black;
+background: rgb(255,99,71)
+ height: 250px;
+  width: 250px;
+  background-color: purple;
+  animation: 
+    pulse 3s ease infinite alternate, 
+    nudge 5s linear infinite alternate;
+  border-radius: 100%;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    background-color: violet;
+  }
+  50% {
+    background-color: blue;
+  }
+}
+
+@keyframes nudge {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  
+  50% {
+    transform: translate(150px, 0);
+  }
+  
+  80% {
+    transform: translate(-150px, 0);
+  }
+}
+
+.twenty4{
+background: rgb(255,99,71);
+  -webkit-animation-name: shake;
+  animation-name: shake;
+ }
+
+ @-webkit-keyframes shake {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+@keyframes shake {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+.twenty5{
+background: rgb(255,99,71)
+}
+
+.twenty6{
+background: rgb(255,99,71)
+}
+
+.twenty7{
+background: rgb(255,99,71)
+}
+
+.twenty8{
+background: rgb(255,99,71)
+}
+
+.twenty9{
+background: rgb(255,99,71)
+}
+
+.thirty{
+background: rgb(255,99,71)
+}
+
+.thirty1{
+background: rgb(255,99,71)
+}
+
+.thirty2{
+background: rgb(255,99,71)
+}
+
+.thirty3{
+background: rgb(255,99,71)
+}
+
+.twenty3{
+background: rgb(255,99,71)
 }
 
 .thirty5{
-  background: black;
+background: rgb(255,99,71)
 }
 
 .thirty6{
-  background: black;
+background: rgb(255,99,71)
 }
 
 .thirty7{
-  background: black;
+background: rgb(255,99,71)
 }
 
 .thirty8{
-  background: black;
+background: rgb(255,99,71)
 }
 
 .thirty9{
-  background: black;
+background: rgb(255,99,71)
 }
 
 .fourty{
-  background: black;
+background: rgb(255,99,71)
 }
 
 .fourty1{
-  background: black;
+background: rgb(255,99,71)
 }
 
 .fourty2{
-  background: black;
+background: rgb(255,99,71)
 }
 
 .fourty3{
-  background: black;
+background: rgb(255,99,71)
 }
 
 .fourty4{
-  background: black;
+background: rgb(255,99,71)
 }
 
 .fourty5{
-  background: black;
+background: rgb(255,99,71)
 }
 
 .fourty6{
-  background: black;
+background: rgb(255,99,71)
 }
 
 .fourty7{
-  background: black;
+background: rgb(255,99,71)
 }
 
 .fourty8{
-  background: black;
+background: rgb(255,99,71)
 }
 
 .fourty9{
-  background: black;
+background: rgb(255,99,71)
 }
 
 .fifty{
-  background: black;
+background: rgb(255,99,71)
 }
