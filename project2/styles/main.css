@@ -9,6 +9,8 @@
   margin-top:50px;
 }
 
+
+
 .one{
   background: rgb(255,99,71); 
   opacity: 1;
@@ -394,90 +396,156 @@ background: rgb(255,99,71)
 
 .twenty4{
 background: rgb(255,99,71);
-  -webkit-animation-name: shake;
-  animation-name: shake;
+transition: background-color .2s ease-in;
  }
 
- @-webkit-keyframes shake {
-  from,
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    -webkit-transform: translate3d(-10px, 0, 0);
-    transform: translate3d(-10px, 0, 0);
-  }
-
-  20%,
-  40%,
-  60%,
-  80% {
-    -webkit-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
-  }
-}
-
-@keyframes shake {
-  from,
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    -webkit-transform: translate3d(-10px, 0, 0);
-    transform: translate3d(-10px, 0, 0);
-  }
-
-  20%,
-  40%,
-  60%,
-  80% {
-    -webkit-transform: translate3d(10px, 0, 0);
-    transform: translate3d(10px, 0, 0);
-  }
+.twenty4:hover{
+   color: #FFF;
 }
 
 .twenty5{
-background: rgb(255,99,71)
+  background: rgb(255,99,71);
+  opacity:1;  
+  animation: flickerAnimation 5s infinite;
 }
 
+@keyframes flickerAnimation { /* flame pulses */
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+
+}  
+
 .twenty6{
-background: rgb(255,99,71)
+background: rgb(255,99,71);
+  transition: all 500ms ease; 
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+}
+
+.twenty6:hover{
+  -webkit-animation-name: hvr-buzz-out;
+  animation-name: hvr-buzz-out;
+  -webkit-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
 }
 
 .twenty7{
-background: rgb(255,99,71)
+background: rgb(255,99,71);
+ transform: perspective(1px) translateZ(0);
 }
 
+.twenty7:hover{
+  border: red solid 6px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  border-radius: 100px;
+   animation-name: spinback;
+  animation-duration: 4s;
+  animation-iteration-count: 1000000000;
+  }
+
 .twenty8{
-background: rgb(255,99,71)
+background: rgb(255,99,71);
 }
+
+.twenty8:hover{
+background-color: yellow;
+  cursor: pointer;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+
+  .stage {
+        display: flex;
+        height: 330px;
+        width: 100%;
+    }
 
 .twenty9{
 background: rgb(255,99,71)
+ height: 250px;
+  width: 250px;
+  background-color: yellow;
+  animation: 
+    pulses 3s ease infinite alternate, 
+    nudges 5s linear infinite alternate;
+  border-radius: 100%;
+      }
+
+@keyframes pulses {
+  0%, 100% {
+    background-color: blue;
+  }
+  50% {
+    background-color: yellow;
+  }
+}
+
+@keyframes nudges {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  
+  50% {
+    transform: translate(0, 150px);
+  }
+  
+  80% {
+    transform: translate(0, -150px);
+  }
+}
+
+.stage{
+    width:250px;
+  height:250px;
+  float: left;
+  margin-left: 50px;
+  margin-top:50px;
 }
 
 .thirty{
-background: rgb(255,99,71)
-}
+background: rgb(255,99,71);
+   align-self: flex-end;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        transform-origin: bottom;
+              animation-name: bounce-4;
+        animation-timing-function: ease;
+
+    }
+    @keyframes bounce-4 {
+        0%   { transform: scale(1,1)    translateY(0); }
+        10%  { transform: scale(1.1,.9) translateY(0); }
+        30%  { transform: scale(.9,1.1) translateY(-100px); }
+        50%  { transform: scale(1,1)    translateY(0); }
+        100% { transform: scale(1,1)    translateY(0); }
+    }
+
+.thirty1:hover.move-rigth{
+background: rgb(255,99,71);
+transition-duration: 2s ease}
+
 
 .thirty1{
-background: rgb(255,99,71)
+ transform: translate(350px,0);
+    -webkit-transform: translate(350px,0); /** Chrome & Safari **/
+    -o-transform: translate(350px,0); /** Opera **/
+    -moz-transform: translate(350px,0); /** Firefox **/
 }
 
 .thirty2{
-background: rgb(255,99,71)
+background: rgb(255,99,71);
 }
 
 .thirty3{
