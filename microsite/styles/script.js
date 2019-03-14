@@ -63,7 +63,6 @@ function draw() {
   
     }
   }
-  text('Press A/S/D/F/\n Keys to Play', width / 2, 128);
 }
 
 function keyPressed() {
