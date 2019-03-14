@@ -1,0 +1,14 @@
+canvas {
+  display: block;
+}
+
+/*Author: Ertugrul MURAT, mail: ertugrulmu@gmail.com*/
+html, body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    margin:0;
+    padding:0;
+    }
+   
