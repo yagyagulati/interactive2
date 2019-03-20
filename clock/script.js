@@ -21,16 +21,15 @@ function getTimesForPlace(city){
 
       let prayerNum = prayerTimes.nextPrayer()
 
-
       if(prayerNum === 1 ){
         let Maghrib = formattedTime(prayerTimes.maghrib, utcSfOffset)
         console.log(Maghrib)
         clockEl.innerText = 'Maghrib '+Maghrib
       } else if(prayerNum === 1 ){
-        document.write('Fajr: ' + formattedTime(prayerTimes.fajr, utcSfOffset);
-        document.write('Dhuhr: ' + formattedTime(prayerTimes.dhuhr, utcSfOffset);
-        document.write('Asr: ' + formattedTime(prayerTimes.asr, utcSfOffset);
-        document.write('Isha: ' + formattedTime(prayerTimes.isha, utcSfOffset);
+        document.write('Fajr: ' + formattedTime(prayerTimes.fajr, utcSfOffset));
+        document.write('Dhuhr: ' + formattedTime(prayerTimes.dhuhr, utcSfOffset));
+        document.write('Asr: ' + formattedTime(prayerTimes.asr, utcSfOffset));
+        document.write('Isha: ' + formattedTime(prayerTimes.isha, utcSfOffset));
 }
 
         if(prayerNum === 2 ){
@@ -38,10 +37,10 @@ function getTimesForPlace(city){
         console.log(Fajr)
         clockEl.innerText = 'Fajr '+Fajr
       } else if(prayerNum === 2 ){
-        document.write('Maghrib: ' + formattedTime(prayerTimes.Maghrib, utcSfOffset);
-        document.write('Dhuhr: ' + formattedTime(prayerTimes.dhuhr, utcSfOffset);
-        document.write('Asr: ' + formattedTime(prayerTimes.asr, utcSfOffset);
-        document.write('Isha: ' + formattedTime(prayerTimes.isha, utcSfOffset);
+        document.write('Maghrib: ' + formattedTime(prayerTimes.Maghrib, utcSfOffset));
+        document.write('Dhuhr: ' + formattedTime(prayerTimes.dhuhr, utcSfOffset));
+        document.write('Asr: ' + formattedTime(prayerTimes.asr, utcSfOffset));
+        document.write('Isha: ' + formattedTime(prayerTimes.isha, utcSfOffset));
       }
 
 
@@ -50,10 +49,10 @@ function getTimesForPlace(city){
         console.log(Dhuhr)
         clockEl.innerText = 'Dhuhr '+Dhuhr
       } else if(prayerNum === 3 ){
-        document.write('Maghrib: ' + formattedTime(prayerTimes.Maghrib, utcSfOffset);
-        document.write('Fajr: ' + formattedTime(prayerTimes.fajr, utcSfOffset);
-        document.write('Asr: ' + formattedTime(prayerTimes.asr, utcSfOffset);
-        document.write('Isha: ' + formattedTime(prayerTimes.isha, utcSfOffset);
+        document.write('Maghrib: ' + formattedTime(prayerTimes.Maghrib, utcSfOffset));
+        document.write('Fajr: ' + formattedTime(prayerTimes.fajr, utcSfOffset));
+        document.write('Asr: ' + formattedTime(prayerTimes.asr, utcSfOffset));
+        document.write('Isha: ' + formattedTime(prayerTimes.isha, utcSfOffset));
       }
 
 
@@ -63,10 +62,10 @@ function getTimesForPlace(city){
         console.log(Asr)
         clockEl.innerText = 'Asr '+Asr
       } else if(prayerNum === 4 ){
-        document.write('Maghrib: ' + formattedTime(prayerTimes.Maghrib, utcSfOffset);
-        document.write('Fajr: ' + formattedTime(prayerTimes.fajr, utcSfOffset);
-        document.write('Dhuhr: ' + formattedTime(prayerTimes.dhuhr, utcSfOffset);
-        document.write('Isha: ' + formattedTime(prayerTimes.isha, utcSfOffset);
+        document.write('Maghrib: ' + formattedTime(prayerTimes.Maghrib, utcSfOffset));
+        document.write('Fajr: ' + formattedTime(prayerTimes.fajr, utcSfOffset));
+        document.write('Dhuhr: ' + formattedTime(prayerTimes.dhuhr, utcSfOffset));
+        document.write('Isha: ' + formattedTime(prayerTimes.isha, utcSfOffset));
       }
 
         if(prayerNum === 5 ){
@@ -74,13 +73,13 @@ function getTimesForPlace(city){
         console.log(Isha)
         clockEl.innerText = 'Isha '+Isha
       } else if(prayerNum === 5 ){
-        document.write('Maghrib: ' + formattedTime(prayerTimes.Maghrib, utcSfOffset);
-        document.write('Fajr: ' + formattedTime(prayerTimes.fajr, utcSfOffset);
-        document.write('Dhuhr: ' + formattedTime(prayerTimes.dhuhr, utcSfOffset);
-        document.write('Asr: ' + formattedTime(prayerTimes.asr, utcSfOffset);
+        document.write('Maghrib: ' + formattedTime(prayerTimes.Maghrib, utcSfOffset));
+        document.write('Fajr: ' + formattedTime(prayerTimes.fajr, utcSfOffset));
+        document.write('Dhuhr: ' + formattedTime(prayerTimes.dhuhr, utcSfOffset));
+        document.write('Asr: ' + formattedTime(prayerTimes.asr, utcSfOffset));
       }
 
-
+        
 
   }
 
