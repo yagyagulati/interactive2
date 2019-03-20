@@ -1,0 +1,48 @@
+body {
+  background: black;  
+  color: white;
+  font-family: monaco;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+}
+
+.classTime {
+  background: white;
+}
+
+#clock {
+  border: 1px solid white;
+  width: 500px;
+  height: 500px;
+
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  position:relative;
+  border-radius:250px;
+}
+
+#secondHand {
+  position:absolute;
+  top:-25px;
+  left:249px;
+  width:2px;
+  height:300px;
+  background:red;
+  
+  /* spin the second hand from the middle of the clock */
+  transform-origin:1px 275px;
+}
+#secondDot {
+  position:absolute;
+  top:18px;
+  left:-5px;
+  height:12px;
+  width:12px;
+  background:red;
+  border-radius:6px;
+}
