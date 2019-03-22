@@ -1,6 +1,12 @@
 let clockEl = document.querySelector('#clock')
 let secondHand = document.querySelector('#secondHand')
 
+          let sf = document.querySelector('#menuImg')
+
+
+sf.addEventListener('mousedown',function(){
+getTimesForPlace('sf')
+})
 
 function getTimesForPlace(city){
 
@@ -10,35 +16,21 @@ function getTimesForPlace(city){
       var date = new Date();
       var coordinates = new adhan.Coordinates(37.773972, -122.431297);
       var params = adhan.CalculationMethod.NorthAmerica();
-      params.madhab = adhan.Madhab.Hanafi;
+      params.madhab = adhan.Madhab.Hanafi ;
       var prayerTimes = new adhan.PrayerTimes(coordinates, date, params);
       var formattedTime = adhan.Date.formattedTime;
       console.log(prayerTimes)
 
+
       let utcSfOffset = -7
 
       let prayerNum = prayerTimes.nextPrayer()
-      let sf = doument.querySelector('#sfImage')
-
-      sf.addEventListener('mouseenter',function(){
-
-      if(prayerNum === 1 ){
-        let Maghrib = formattedTime(prayerTimes.maghrib, utcSfOffset)
-         document.write('Maghrib '+Maghrib);
-
-      } else if(prayerNum === 1 ){
-        document.write('Fajr: ' + formattedTime(prayerTimes.fajr, utcSfOffset));
-        document.write('Dhuhr: ' + formattedTime(prayerTimes.dhuhr, utcSfOffset));
-        document.write('Asr: ' + formattedTime(prayerTimes.asr, utcSfOffset));
-        document.write('Isha: ' + formattedTime(prayerTimes.isha, utcSfOffset));
-      }
-
-
-        if(prayerNum === 2 ){
+   
+        if(prayerNum === 1 ){
         let Fajr = formattedTime(prayerTimes.fajr, utcSfOffset);
         console.log(Fajr)
         clockEl.innerText = 'Fajr '+Fajr
-      } else if(prayerNum === 2 ){
+      } else if(prayerNum === 1 ){
         document.write('Maghrib: ' + formattedTime(prayerTimes.maghrib, utcSfOffset));
         document.write('Dhuhr: ' + formattedTime(prayerTimes.dhuhr, utcSfOffset));
         document.write('Asr: ' + formattedTime(prayerTimes.asr, utcSfOffset));
@@ -46,11 +38,11 @@ function getTimesForPlace(city){
       }
 
 
-        if(prayerNum === 3 ){
+              if(prayerNum === 2 ){
         let Dhuhr = formattedTime(prayerTimes.Dhuhr, utcSfOffset)
         console.log(Dhuhr)
         clockEl.innerText = 'Dhuhr '+Dhuhr
-      } else if(prayerNum === 3 ){
+      } else if(prayerNum === 2 ){
         document.write('Maghrib: ' + formattedTime(prayerTimes.maghrib, utcSfOffset));
         document.write('Fajr: ' + formattedTime(prayerTimes.fajr, utcSfOffset));
         document.write('Asr: ' + formattedTime(prayerTimes.asr, utcSfOffset));
@@ -58,14 +50,27 @@ function getTimesForPlace(city){
       }
 
 
-        if(prayerNum === 4 ){
-        let Asr = formattedTime(prayerTimes.Asr, utcSfOffset)
-        console.log(Asr)
+
+        if(prayerNum === 3 ){
+        let Asr = formattedTime(prayerTimes.asr, utcSfOffset)
         clockEl.innerText = 'Asr '+Asr
-      } else if(prayerNum === 4 ){
+      } else if(prayerNum === 3 ){
         document.write('Maghrib: ' + formattedTime(prayerTimes.maghrib, utcSfOffset));
         document.write('Fajr: ' + formattedTime(prayerTimes.fajr, utcSfOffset));
         document.write('Dhuhr: ' + formattedTime(prayerTimes.dhuhr, utcSfOffset));
+        document.write('Isha: ' + formattedTime(prayerTimes.isha, utcSfOffset));
+      }
+
+
+      
+      if(prayerNum === 4 ){
+        let Maghrib = formattedTime(prayerTimes.maghrib, utcSfOffset)
+        clockEl.innerText = 'Maghrib '+Maghrib
+
+      } else if(prayerNum === 4 ){
+        document.write('Fajr: ' + formattedTime(prayerTimes.fajr, utcSfOffset));
+        document.write('Dhuhr: ' + formattedTime(prayerTimes.dhuhr, utcSfOffset));
+        document.write('Asr: ' + formattedTime(prayerTimes.asr, utcSfOffset));
         document.write('Isha: ' + formattedTime(prayerTimes.isha, utcSfOffset));
       }
 
@@ -83,7 +88,5 @@ function getTimesForPlace(city){
       }
       
 }
-      )
-      }
-    }
+}
 
