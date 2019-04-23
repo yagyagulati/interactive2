@@ -1,0 +1,39 @@
+.header{
+  margin-left: 70px;
+  margin-top: 90px;
+  position: relative;
+}
+
+.fourty1{
+margin-left: -126px;
+}
+
+.fourty1:hover{
+animation: fourty1 0.3s linear infinite both;
+  }
+  @keyframes fourty1 {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(-2px, 2px);
+    }
+    40% {
+      transform: translate(-2px, -2px);
+    }
+    60% {
+      transform: translate(2px, 2px);
+    }
+    80% {
+      transform: translate(2px, -2px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+
+/*
+@media (min-width: 1000px) { 
+  body {
+    font-family: 'FontName', Fallback, sans-serif; 
+  }
