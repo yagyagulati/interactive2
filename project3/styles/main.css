@@ -118,14 +118,50 @@ h5:hover{
 
  .description {
         margin-left: 900px;
-        margin-top: -1200px;
+        margin-top: -1400px;
+    }
+
+ .description1 {
+        margin-left: 900px;
+        margin-top: -1300px;
+    }
+
+     .description2 {
+        margin-left: 900px;
+        margin-top: -1300px;
     }
 
 @media screen and (max-width: 1000px) {
     .description {
         margin-left: 70px;
+        margin-top: -1000px;
+    }
+
+    .description1 {
+        margin-left: 70px;
         margin-top: -700px;
+    }
+
+    .description2 {
+        margin-left: 70px;
+        margin-top: -600px;
+    }
+
+    .all{
+      transform: scale(.6);
+      transition-duration: 1.5s;
     } 
+
+     .alli{
+      transform: scale(.6);
+      transition-duration: 1.5s;
+    }
+
+     .allii{
+      margin-top: -300px;
+      transform: scale(.6);
+      transition-duration: 1.5s;
+    }
 }
 
     
