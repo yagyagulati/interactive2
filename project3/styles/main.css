@@ -115,6 +115,22 @@ h5:hover{
   margin-bottom: 100px;
   : black;
 }
+
+ .description {
+        margin-left: 900px;
+        margin-top: -1400px;
+    }
+
+@media screen and (max-width: 1000px) {
+    .description {
+        margin-left: 70px;
+        margin-top: -700px;
+    } 
+}
+
+    
+
+
 /*
 @media (min-width: 1000px) { 
   body {
