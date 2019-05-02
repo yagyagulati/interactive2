@@ -5,13 +5,10 @@
 }
 
 .fourty1{
-margin-left: -126px;
-}
+animation: anim 4s linear infinite both;
 
-.fourty1:hover{
-animation: img 1s linear infinite both;
   }
-  @keyframes img {
+  @keyframes anim {
     0% {
       transform: translate(0);
     }
@@ -34,66 +31,56 @@ animation: img 1s linear infinite both;
 
 @import url(https://fonts.googleapis.com/css?family=Josefin+Slab:100);
 
-.slider-wrap {
-  width: 1500px;
-  height: 600px;
-  margin: 20px auto;
-}
-.slider {
-  overflow-x: scroll;
-}
-.holder {
-  width: 300%;
-}
-.slide {
-  float: left;
-  width: 900px;
-  height: 600px;
+
+.all{
+  transform-origin: left top;
   position: relative;
-  background-position: -100px 0;
+  transition: transform 3s;
 }
-.temp {
-  position: absolute;
-  color: white;
-  font-size: 100px;
-  bottom: 15px;
-  left: 15px;
-  font-family: 'Josefin Slab', serif;
-  font-weight: 100;
+
+.all:hover{
+ transform: rotate(-15deg);
 }
-#slide-0 {
-  background-image: 
+
+.alli{
+  animation: alli 1s linear infinite both;
 }
-#slide-1 {
-  background-image: 
+
+.alli:hover{
+animation: linear infinite both;
 }
-#slide-2 {
-  background-image: 
+
+  @keyframes alli {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(-4px, 4px);
+    }
+    40% {
+      transform: translate(-4px, -4px);
+    }
+    60% {
+      transform: translate(4px, 4px);
+    }
+    80% {
+      transform: translate(4px, -4px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+
+.allii{
+transition: transform 3s;
 }
-.slide:before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 40%;
+
+.allii:hover{
+ transform: rotate3d(3, 2, 2, 30deg) translateZ(50px);
 }
-.slider-nav {
-  text-align: center;
-  margin: 10px 0 0 0;
-}
-.slider-nav a {
-  width: 10px;
-  height: 10px;
-  display: inline-block;
-  background: #ddd;
-  overflow: hidden;
-  text-indent: -9999px;
-  border-radius: 50%;
-}
-.slider-nav a.active {
-  background: #999;
-}
+
+.description{
+  position: relative;
 
 
 /*
