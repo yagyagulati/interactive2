@@ -81,8 +81,31 @@ transition: transform 3s;
 
 .description{
   position: relative;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin-top: 12.5px;
+  background-color: gray;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot:hover {
+  background-color: black;
+  }
 
 
+.doti{
+margin-left: 20px;
+margin-top: -300px;
+}
+
+h4{
+  margin-bottom: 100px;
+  margin-left: 70px;
+}
 /*
 @media (min-width: 1000px) { 
   body {
